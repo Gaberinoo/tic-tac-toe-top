@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+:root {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #67e8f9;
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #e11d48;
+    font-size: 4rem;
+    text-shadow: #a855f7 5px 2px;
+}
+
+body p {
+    font-size: 1.2rem;
+}
+
+.board-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    min-width: 300px;
+    width: 350px;
+    height: 350px;
+}
+
+.cell {
+    border: 2px solid #a5b4fc;
+    border-radius: 10px;
+    margin: 2px;
+    background-color: #a5f3fc;
+    font-size: 3em;
+    color: #a855f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+dialog:not([open]){
+    display:none;
+  }
+
+dialog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #22d3ee;
+    width: 350px;
+    height: 350px;
+    color: aliceblue;
+}
+
+span {
+    font-size: 4rem;
+}
+
+.winner {
+    font-size: 3rem;
+}
+
+dialog button {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    border-radius: 10px;
+    width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+    background-color: #e11d48;
+    color: aliceblue;
+}
+
+dialog::backdrop {
+  backdrop-filter: blur(2px);
+}
